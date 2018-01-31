@@ -1,0 +1,41 @@
+html, body, div{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(../images/wallpaper_login_01.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div.input_container{
+    width: 500px;
+    height: auto;
+    
+    margin-left: calc(50% - 250px);
+    margin-top: 25vh;
+    
+    padding: 50px;
+    
+    border-radius: 15px;
+    
+    background-color: #fefefe;
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.error_message_box{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    
+    width: 100%;
+    height: auto;
+    
+    background-color: rgba(255, 77, 77, 0.45);
+    
+    transition: 0.6s;
+}
