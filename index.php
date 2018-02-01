@@ -64,7 +64,7 @@ if(!isset($_SESSION["user_id"])){
                     <img class="header_storesimg" src="uploads/schop-images/2018013113509654.png"/>
                     <div class="header_shop_name">
                         <h5 class="header_shop_nameh5">{{shop.name}}</h5>
-                        <p class="header_shop_namep">{{shop.addresses[0].street}}{{shop.addresses[0].nr}}</p>
+                        <p class="header_shop_namep">{{shop.addresses[0].street}} {{shop.addresses[0].nr}}, {{shop.addresses[0].zipcode}} {{shop.addresses[0].city}}</p>
                     </div>
                 </div>
                 
@@ -75,7 +75,14 @@ if(!isset($_SESSION["user_id"])){
                     <img class="header_storesimg" src="uploads/schop-images/2018013113509654.png"/>
                     <div class="header_shop_name">
                         <h5 class="header_shop_nameh5">{{item.name}}</h5>
-                        <p class="header_shop_namep">{{item.addresses[0].street}}{{item.addresses[0].nr}}</p>
+                        <p class="header_shop_namep">{{item.addresses[0].street}} {{item.addresses[0].nr}}, {{item.addresses[0].zipcode}} {{item.addresses[0].city}}</p>
+                    </div>
+                </div>
+                <div style="margin-top: 5px" class="header_stores_hidendiv">
+                    <img class="header_storesimg" src="uploads/schop-images/2018013113509654.png"/>
+                    <div class="header_shop_name">
+                        <h5 class="header_shop_nameh5">NEW SHOP</h5>
+                        <p class="header_shop_namep">Click here to add a new shop.</p>
                     </div>
                 </div>
                 
