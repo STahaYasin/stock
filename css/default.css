@@ -147,6 +147,13 @@ panel-right{
     float: right;
     margin-top: 16px;
     margin-right: 10px;
+    transition: 0.4s;
+}
+.triangleneg{
+    float: right;
+    margin-top: 16px;
+    margin-right: 10px;
+    transform: rotate(180deg);
 }
 .header_stores_hiden{
     position: fixed;

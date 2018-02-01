@@ -63,15 +63,15 @@ if(!isset($_SESSION["user_id"])){
                 <div>
                     <img class="header_storesimg" src="uploads/schop-images/2018013113509654.png"/>
                     <div class="header_shop_name">
-                        <h5 class="header_shop_nameh5">Mevlana</h5>
-                        <p class="header_shop_namep">Langestuivenbergstraat 15</p>
+                        <h5 class="header_shop_nameh5">{{shop.name}}</h5>
+                        <p class="header_shop_namep">{{shop.addresses[0].street}}{{shop.addresses[0].nr}}</p>
                     </div>
                 </div>
                 
-                <div class="triangle"></div>
+                <div class="triangle" ng-class="{'triangleneg': header_open_stores_status}"></div>
             </div>
             <div class="header_stores_hiden"  ng-class="{'header_stores_show': header_open_stores_status}">
-                <div class="header_stores_hidendiv" ng-repeat="item in shops">
+                <div class="header_stores_hidendiv" ng-repeat="item in shops" ng-click="openshop(item)">
                     <img class="header_storesimg" src="uploads/schop-images/2018013113509654.png"/>
                     <div class="header_shop_name">
                         <h5 class="header_shop_nameh5">{{item.name}}</h5>
