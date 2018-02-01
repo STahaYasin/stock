@@ -28,7 +28,7 @@ $email = $req->email;
 $hash = $req->hash;
 $salt = $req->salt;
 
-$look_for_email_sql_query = "SELECT rdl632stock_emails_uid FROM `rdl632stock_emails` WHERE rdl632stock_emails.rdl632stock_emails_email = '$email' limit 1";
+$look_for_email_sql_query = "SELECT rdl632stock_emails_uid FROM `rdl632stock_emails` WHERE rdl632stock_emails.rdl632stock_emails_email = '$email' and rdl632stock_emails.rdl632stock_emails_type = '1' limit 1";
 $look_for_email_dieobject = new result();
 $look_for_email_dieobject->success = false;
 $look_for_email_dieobject->message = "Error in database";

@@ -78,6 +78,11 @@
                         salt: salt
                     }).success(function(res){
                         if(res.success == true){
+                            
+                            localStorage.setItem("sessionId", res.data.sessionId);
+                            localStorage.setItem("sessionKey", res.data.sessionKey);
+                            localStorage.setItem("sessionToken", res.data.sessionToken);
+                            
                             window.location.href = "index.php";
                         }
                         else{

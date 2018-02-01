@@ -67,7 +67,7 @@ if($insert_user_sql_res == false){
 //// ---- start insert email ----
 $new_user_id = (mysqli_insert_id($conn));
 
-$insert_email_sql_query = "INSERT INTO `rdl632stock_emails` (`rdl632stock_emails_id`, `rdl632stock_emails_uid`, `rdl632stock_emails_email`, `rdl632stock_emails_ok`, `rdl632stock_emails_date`) VALUES (NULL, '$new_user_id', '$email', '0', '$date_time_now');";
+$insert_email_sql_query = "INSERT INTO `rdl632stock_emails` (`rdl632stock_emails_id`, `rdl632stock_emails_uid`, `rdl632stock_emails_email`, `rdl632stock_emails_ok`, `rdl632stock_emails_date`, `rdl632stock_emails_type`) VALUES (NULL, '$new_user_id', '$email', '0', '$date_time_now', '1');";
 $insert_email_sql_error = new result();
 $insert_email_sql_error->success = false;
 $insert_email_sql_error->message = "died at insert email";

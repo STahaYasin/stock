@@ -1,0 +1,26 @@
+<div>
+    <h3>Je hebt nog geen shops.</h3>
+    <p>Start hier en maak een shop aan.</p>
+</div>
+<div class="content_box_1">
+    <div class="green">
+        <div class="_500_right">
+            <h3>CREATE</h3>
+            <div>
+                <h5 class="section_title">NAME</h5>
+                <input ng-model="newshop.name" class="in_2" type="text" placeholder="NAME"/>
+                <br>
+                <h5 class="section_title">ADDRESS</h5>
+                <input ng-model="newshop.address.street" class="in_3-4" type="text" placeholder="STREET"/><input ng-model="newshop.address.number" class="in_4" type="text" placeholder="NR"/>
+                <br>
+                <input ng-model="newshop.address.zipcode" class="in_3" type="text" placeholder="ZIP CODE"/><input ng-model="newshop.address.city" class="in_3" type="text" placeholder="CITY"/><input ng-model="newshop.address.country" class="in_3" type="text" placeholder="COUNTRY"/>
+                <br>
+                <h5 class="section_title">CONTACT</h5>
+                <input ng-model="newshop.email" class="in_2" type="text" placeholder="EMAIL"/><input ng-model="newshop.phone" class="in_2" type="text" placeholder="PHONE"/>
+            </div>
+            <div>
+                <button ng-click="savenewshop()">SAVE AND ADD DETAILS</button>
+            </div>
+        </div>
+    </div>
+</div>

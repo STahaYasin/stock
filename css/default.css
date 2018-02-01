@@ -2,10 +2,57 @@ html, body, header, main, footer, div{
     margin: 0px;
     padding: 0px;
 }
+p, a, i, b, h1, h2, h3, h4, h5, h6, label, input, button{
+    font-family: 'Roboto', sans-serif;
+}
+
+.in_1{
+    width: calc(100% - 22px - 10px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #007b7b;
+    margin: 5px;
+}
+.in_2{
+    width: calc(50% - 22px - 10px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #007b7b;
+    margin: 5px;
+}
+.in_3{
+    width: calc(33.3333% - 22px - 10px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #007b7b;
+    margin: 5px;
+}
+.in_4{
+    width: calc(25% - 22px - 10px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #007b7b;
+    margin: 5px;
+}
+.in_3-4{
+    width: calc(75% - 22px - 10px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #007b7b;
+    margin: 5px;
+}
+.section_title{
+    margin-bottom: 5px;
+}
+
+body{
+    background-color: #eaefea;
+    overflow-y: auto;
+}
 
 header{
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     
     top: 0px;
     left: 0px;
@@ -31,6 +78,16 @@ panel-left{
     
     background-color: #006969;
 }
+
+.triangle{
+    width: 0px;
+    height: 0px;
+    
+    border: 7px solid transparent;
+    border-top: 7px solid black;
+    border-bottom: 0px;
+}
+
 panel-right{
     display: block;
     z-index: 1;
@@ -39,4 +96,131 @@ panel-right{
     margin-left: 250px;
     padding: 15px;
     width: auto;
+}
+.header_user{
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 100%;
+    background-color: #fff;
+}
+.header_stores{
+    position: fixed;
+    top: 10px;
+    float: right;
+    right: 100px;
+    
+    
+    width: 400px;
+    height: 40px;
+    
+    background-color: #fff;
+    
+    border-radius: 5px;
+    
+    cursor: pointer;
+}
+.header_storesimg{
+    float: left;
+    border-radius: 3px;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+.header_shop_name{
+    padding-top: 5px;
+    padding-left: 5px;
+    float: left;
+}
+.header_shop_nameh5{
+    margin: 0px;
+}
+.header_shop_namep{
+    margin: 0px;
+    font-size: 0.8em;
+}
+.triangle{
+    float: right;
+    margin-top: 16px;
+    margin-right: 10px;
+}
+.header_stores_hiden{
+    position: fixed;
+    top: 10px;
+    height: 0px;
+    float: right;
+    right: 100px;
+    
+    border-radius: 5px;
+    overflow-x: hidden;
+    cursor: pointer;
+    z-index: 7;
+    transition: 0.4s;
+}
+.header_stores_show{
+    top: 70px;
+    height: auto;
+}
+.header_stores_hidendiv{
+    float: left;
+    width: 400px;
+    height: 40px;
+    background-color: #fff;
+    clear: both;
+}
+.header_stores_hidendiv:hover{
+    float: left;
+    width: 400px;
+    height: 40px;
+    background-color: #eaffea;
+    clear: both;
+}
+.header_stores_hiden_hidden{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0vh;
+    background-color: darkslategrey;
+    z-index: 4;
+    transition: 0.2s;
+    opacity: 0.4;
+}
+.header_stores_hiden_show{
+    height: 120vh;
+    z-index: 4;
+}
+
+/* ---------------------------- MAIN ---------------------------- */
+
+.content_box_1{
+    width: calc(100%);
+    background-color: #fff;
+    
+    border-radius: 5px;
+    overflow-x: hidden;
+}
+.content_box_1 div.green{
+    border-left: 5px solid #006969;
+    padding: 10px;
+    padding-left: 15px;
+    overflow-y: auto;
+}
+
+.half_left{
+    width: calc(50% - 10px);
+    float: left;
+}
+
+.half_right{
+    width: calc(50% - 10px);
+    float: right;
+}
+._500_right{
+    width: calc(500px - 10px);
+    float: right;
 }
