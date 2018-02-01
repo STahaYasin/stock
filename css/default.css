@@ -78,6 +78,19 @@ panel-left{
     
     background-color: #006969;
 }
+.left_button{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.left_button:hover{
+    background-color: #eaefea;
+}
 
 .triangle{
     width: 0px;
@@ -183,7 +196,7 @@ panel-right{
     float: left;
     width: 400px;
     height: 40px;
-    background-color: #eaffea;
+    background-color: #eaefea;
     clear: both;
 }
 .header_stores_hiden_hidden{

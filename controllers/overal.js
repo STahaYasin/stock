@@ -1,4 +1,4 @@
-app.controller("overal", function($scope, $http, $location){
+app.controller("overal", function($scope, $http, $location, $routeParams){
     $scope.shops = [];
     $scope.shop = {};
     
@@ -30,6 +30,11 @@ app.controller("overal", function($scope, $http, $location){
         }
     }
     
+    $scope.opennewshoppage = function(){
+        $scope.header_close_stores();
+        $location.path("/createshop");
+    }
+    
     $scope.header_open_stores_status = false;
     
     $scope.header_open_stores = function(){
@@ -41,5 +46,6 @@ app.controller("overal", function($scope, $http, $location){
     $scope.openshop = function(shop){
         $scope.header_close_stores();
         $scope.shop = shop;
+        $location.path("/home/" + shop.id);
     }
 });

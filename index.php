@@ -28,6 +28,7 @@ if(!isset($_SESSION["user_id"])){
         </script>
         
         <script src="controllers/home.js"></script>
+        <script src="controllers/suppliers.js"></script>
         <script src="controllers/createshop.js"></script>
         <script src="controllers/overal.js"></script>
         
@@ -37,6 +38,14 @@ if(!isset($_SESSION["user_id"])){
                 .when('/home', {
                     templateUrl: 'templates/home.html',
                     controller: 'home'
+                })
+                .when('/home/:shopid', {
+                    templateUrl: 'templates/home.html',
+                    controller: 'home'
+                })
+                .when('/suppliers/:shopid', {
+                    templateUrl: 'templates/suppliers.html',
+                    controller: 'suppliers'
                 })
                 .when('/createshop', {
                     templateUrl: 'templates/createshop.html',
@@ -78,7 +87,7 @@ if(!isset($_SESSION["user_id"])){
                         <p class="header_shop_namep">{{item.addresses[0].street}} {{item.addresses[0].nr}}, {{item.addresses[0].zipcode}} {{item.addresses[0].city}}</p>
                     </div>
                 </div>
-                <div style="margin-top: 5px" class="header_stores_hidendiv">
+                <div style="margin-top: 5px" class="header_stores_hidendiv" ng-click="opennewshoppage()">
                     <img class="header_storesimg" src="uploads/schop-images/2018013113509654.png"/>
                     <div class="header_shop_name">
                         <h5 class="header_shop_nameh5">NEW SHOP</h5>
@@ -91,7 +100,18 @@ if(!isset($_SESSION["user_id"])){
         </header>
         <main>
             <panel-left>
-                
+                <div>
+                    <div>
+                        
+                    </div>
+                    <div>
+                        <h3>SHOP</h3>
+                        <button class="left_button">DETAILS</button>
+                        <button class="left_button">LICENCES</button>
+                        <button class="left_button">SUPPLIER</button>
+                        <button class="left_button">PRODUCTS</button>
+                    </div>
+                </div>
             </panel-left>
             <panel-right ng-view>
                 <h3>dit is de main page</h3><?php echo $_SESSION["user_id"]; ?>
